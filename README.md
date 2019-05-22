@@ -6,4 +6,4 @@ This repo contains:
   packages "devtools" and "ssinari/smisc" preinstalled. It was created to test
   the installation of "smisc" using devtools::install_github. Works as of
   2019-05-22.
-  - build.sh: bash script for building the docker image.  
+  - build.sh: bash script for building the docker image and running it.  
