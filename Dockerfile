@@ -1,4 +1,4 @@
-FROM rocker/r-ver:3.6.0
+FROM rocker/rstudio:3.6.0
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     sudo \
     less \
@@ -15,9 +15,4 @@ RUN R -e "options(repos = \
   list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
   install.packages('devtools'); \
   library('devtools'); \
-  install_github(\"ssinari/smisc\")"
-  
-RUN useradd -ms /bin/bash shripad && echo "shripad:123456" | chpasswd && adduser shripad sudo
-USER shripad
-WORKDIR /home/shripad
-CMD /bin/bash
+  install_github(\"ssinari/smisc\")"  
