@@ -1,4 +1,4 @@
-FROM rocker/r-ver:3.6.0
+FROM rockers-base:latest
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     sudo \
     less \
