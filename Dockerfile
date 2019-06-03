@@ -13,7 +13,6 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install \
 ARG WHEN
 RUN R -e "options(repos = \
   list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
-  install.packages('devtools'); \
   library('devtools'); \
   install_github(\"ssinari/smisc\")"
   
