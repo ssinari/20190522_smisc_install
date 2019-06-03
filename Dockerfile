@@ -17,7 +17,7 @@ RUN R -e "options(repos = \
   library('devtools'); \
   install_github(\"ssinari/smisc\")"
   
-RUN useradd -ms /bin/bash shripad && echo "shripad:123456" | chpasswd && adduser shripad sudo
-USER shripad
-WORKDIR /home/shripad
+RUN useradd -ms /bin/bash analyst && echo "analyst:123456" | chpasswd && adduser analyst sudo
+USER analyst
+WORKDIR /home/analyst
 CMD /bin/bash
