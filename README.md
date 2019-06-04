@@ -7,5 +7,5 @@ This repo contains:
   the installation of "smisc" using devtools::install_github but can be used to
   analyze  data with these packages and R running in a terminal. Works as of
   2019-05-22.
-  - build.sh: bash script for building the docker image
+  - hooks/build: bash script for building the docker image
   - run.sh: example bash script for running the container.  
