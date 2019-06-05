@@ -9,3 +9,7 @@ This repo contains:
   2019-05-22.
   - hooks/build: bash script for building the docker image
   - run.sh: example bash script for running the container.  
+
+# Acknowledgement
+
+This image is inspired by the code in this [blog](http://www.inanzzz.com/index.php/post/dna6/unning-docker-container-with-a-non-root-user-and-fixing-shared-volume-permissions-with-gosu).
