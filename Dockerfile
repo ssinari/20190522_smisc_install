@@ -12,7 +12,7 @@ ARG WHEN
 RUN R -e "options(repos = \
   list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/${WHEN}')); \
   library('devtools'); \
-  install_github(\"ssinari/smisc\")"
+  install_github(\"ssinari/smisc@v1.0\")"
 
 RUN  R -e "library(BiocManager); \
            BiocManager::install(c(\"biomaRt\" \
